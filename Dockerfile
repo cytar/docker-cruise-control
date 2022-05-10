@@ -1,5 +1,5 @@
 FROM eclipse-temurin:11.0.15_10-jdk as cruisecontrol
-ARG VERSION=2.5.86
+ARG VERSION=2.5.57
 WORKDIR /
 USER root
 RUN \
@@ -23,7 +23,7 @@ RUN \
 
 FROM node:16.14-buster as cruisecontrol-ui
 ARG BRANCH=master
-ARG REF=6d04dc6f3c790141e6dd9a506fb020b51a23de07
+ARG REF=v0.3.4
 WORKDIR /
 RUN \
   set -xe; \
